@@ -17,14 +17,14 @@
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="id da fruta:" />
+            android:text="nome da fruta:" />
 
         <EditText
             android:id="@+id/editTextNomeFrutaDelete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="digite o id da fruta aqui"
+            android:hint="digite o nome da fruta aqui"
             android:inputType="textPersonName" />
 
         <View
@@ -48,7 +48,7 @@
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/deletarFrutaButton"
+            android:id="@+id/AtualizarFrutaButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="atualizarFruta"

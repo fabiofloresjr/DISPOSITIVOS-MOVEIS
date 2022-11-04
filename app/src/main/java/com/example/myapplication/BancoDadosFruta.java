@@ -79,9 +79,8 @@ public class BancoDadosFruta extends SQLiteOpenHelper {
         Log.i("fruta","SQL deletarFrutaPorNome: " + sql);
         getWritableDatabase().execSQL(sql);
     }
-    public void updatePrecoFruta(Integer id, Float novoPreco){
-        String sql = "update fruta set preco = " + novoPreco +" where " +
-                " id = " + id ;
+    public void updatePrecoFruta(String nome, Float novoPreco){
+        String sql = "update fruta set preco = '" + novoPreco + "' where nome == '" + nome + "'" ;
         Log.i("fruta","SQL updatePrecoFruta: " + sql);
         getWritableDatabase().execSQL(sql);
     }

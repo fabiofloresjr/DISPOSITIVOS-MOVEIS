@@ -23,14 +23,14 @@ public class UpdateFrutaActivity extends AppCompatActivity {
 
     public void atualizarFruta(View view) {
 
-        EditText id = findViewById(R.id.editTextNomeFrutaDelete);
+        EditText nome1 = findViewById(R.id.editTextNomeFrutaDelete);
         EditText novoPrecoFruta = findViewById(R.id.editTextNovoPrecoFruta);
 
-        Integer idInteiro = Integer.parseInt(id.getText().toString());
+        String nome = nome1.getText().toString();
         Float precoFrutaFloat = Float.parseFloat(novoPrecoFruta.getText().toString());
 
 
-        bancoDadosFruta.updatePrecoFruta(idInteiro,precoFrutaFloat);
+        bancoDadosFruta.updatePrecoFruta(nome,precoFrutaFloat);
 
         Bundle bundle = new Bundle();
         bundle.putSerializable("lista", (Serializable) bancoDadosFruta.buscaTodasFrutas());
