@@ -13,9 +13,24 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:onClick="abreTelaAtualizacao"
+            android:text="Atualizar Frutas" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:onClick="abreTelaDelete"
+            android:text="Deletar FRUTAS" />
+
         <TextView
             android:id="@+id/textViewListagemFrutas"
             android:layout_width="match_parent"
-            android:layout_height="718dp" />
+            android:layout_height="659dp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

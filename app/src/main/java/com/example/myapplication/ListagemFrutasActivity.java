@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,5 +37,15 @@ public class ListagemFrutasActivity extends AppCompatActivity {
 
 
 
+    }
+    public void abreTelaAtualizacao(View view) {
+
+        Intent intent = new Intent(this,UpdateFrutaActivity.class);
+        startActivity(intent);
+    }
+    public void abreTelaDelete(View view) {
+
+        Intent intent = new Intent(this,activity_delete_fruta.class);
+        startActivity(intent);
     }
 }

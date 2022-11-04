@@ -103,4 +103,5 @@ public class CadastroFrutasActivity extends AppCompatActivity {
 
 
     }
+
 }
