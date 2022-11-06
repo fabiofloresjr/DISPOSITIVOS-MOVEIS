@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastroFrutasActivity">
+    tools:context=".CadastroJogosActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,10 +17,10 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="62dp"
-            android:text="Nome da Fruta:" />
+            android:text="Nome do Jogo:" />
 
         <EditText
-            android:id="@+id/editTextTextNomeFruta"
+            android:id="@+id/editTextTextNomeJogo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -30,10 +30,10 @@
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="54dp"
-            android:text="Preço da Fruta" />
+            android:text="Preço do Jogo" />
 
         <EditText
-            android:id="@+id/editTextTextPrecoFruta"
+            android:id="@+id/editTextTextPrecoJogo"
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:ems="10"

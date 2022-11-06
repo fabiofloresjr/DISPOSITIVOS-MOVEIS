@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListagemFrutasActivity">
+    tools:context=".ListagemJogosActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,17 +18,24 @@
             android:layout_width="match_parent"
             android:layout_height="72dp"
             android:onClick="abreTelaAtualizacao"
-            android:text="Atualizar Frutas" />
+            android:text="Atualizar Jogos" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="72dp"
             android:onClick="abreTelaDelete"
-            android:text="Deletar FRUTAS" />
+            android:text="Deletar Jogos" />
+
+        <Button
+            android:id="@+id/buttonVoltaCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:onClick="abreTelaCadastro"
+            android:text="Voltar à tela de cadastro" />
 
         <TextView
-            android:id="@+id/textViewListagemFrutas"
+            android:id="@+id/textViewListagemJogos"
             android:layout_width="match_parent"
             android:layout_height="659dp" />
 

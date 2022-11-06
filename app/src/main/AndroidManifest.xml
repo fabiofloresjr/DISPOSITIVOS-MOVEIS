@@ -16,16 +16,16 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".activity_delete_fruta"
+            android:name=".activity_delete_jogo"
             android:exported="false" />
         <activity
-            android:name=".UpdateFrutaActivity"
+            android:name=".UpdateJogoActivity"
             android:exported="false" />
         <activity
-            android:name=".ListagemFrutasActivity"
+            android:name=".ListagemJogosActivity"
             android:exported="true" />
         <activity
-            android:name=".CadastroFrutasActivity"
+            android:name=".CadastroJogosActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

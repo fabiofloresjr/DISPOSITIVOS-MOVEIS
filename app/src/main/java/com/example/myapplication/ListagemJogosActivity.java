@@ -9,23 +9,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
-public class ListagemFrutasActivity extends AppCompatActivity {
+public class ListagemJogosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listagem_frutas);
-        List<Fruta> listaFruta = (List<Fruta>) getIntent().
+        setContentView(R.layout.activity_listagem_jogos);
+        List<Jogo> listaJogo = (List<Jogo>) getIntent().
                 getSerializableExtra("lista");
 
-        TextView textView = findViewById(R.id.textViewListagemFrutas);
+        TextView textView = findViewById(R.id.textViewListagemJogos);
 
         StringBuilder mensagem = new StringBuilder();
-        for(int i=0; i < listaFruta.size(); i++){
-            Fruta fruta = listaFruta.get(i);
-            mensagem.append(fruta.getNome());
+        for(int i=0; i < listaJogo.size(); i++){
+            Jogo jogo = listaJogo.get(i);
+            mensagem.append(jogo.getNome());
             mensagem.append(" R$ ");
-            mensagem.append(fruta.getPreco());
+            mensagem.append(jogo.getPreco());
             mensagem.append("\n");
             mensagem.append("---------------------------------");
             mensagem.append("\n");
@@ -40,12 +40,17 @@ public class ListagemFrutasActivity extends AppCompatActivity {
     }
     public void abreTelaAtualizacao(View view) {
 
-        Intent intent = new Intent(this,UpdateFrutaActivity.class);
+        Intent intent = new Intent(this, UpdateJogoActivity.class);
         startActivity(intent);
     }
     public void abreTelaDelete(View view) {
 
-        Intent intent = new Intent(this,activity_delete_fruta.class);
+        Intent intent = new Intent(this, activity_delete_jogo.class);
+        startActivity(intent);
+    }
+    public void abreTelaCadastro(View view){
+
+        Intent intent = new Intent(this, CadastroJogosActivity.class);
         startActivity(intent);
     }
 }

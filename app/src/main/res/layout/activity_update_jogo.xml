@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_delete_fruta">
+    tools:context=".UpdateJogoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,14 +17,14 @@
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="nome da fruta:" />
+            android:text="nome do jogo:" />
 
         <EditText
-            android:id="@+id/editTextNomeFrutaDelete"
+            android:id="@+id/editTextNomeJogoDelete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="digite o nome da fruta aqui"
+            android:hint="digite o nome do jogo aqui"
             android:inputType="textPersonName" />
 
         <View
@@ -33,11 +33,25 @@
             android:layout_height="35dp"
             android:background="?android:attr/listDivider" />
 
-        <Button
-            android:id="@+id/AtualizarFrutaButton"
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Novo Preço do Jogo" />
+
+        <EditText
+            android:id="@+id/editTextNovoPrecoJogo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="deletarFruta"
-            android:text="Deletar Fruta" />
+            android:ems="10"
+            android:hint="digite aqui o novo preço do jogo"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/AtualizarJogoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="atualizarJogo"
+            android:text="Atualizar Jogo" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

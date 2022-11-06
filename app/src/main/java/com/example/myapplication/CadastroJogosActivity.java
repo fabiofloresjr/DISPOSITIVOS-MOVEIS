@@ -11,17 +11,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.Serializable;
 
-public class CadastroFrutasActivity extends AppCompatActivity {
+public class CadastroJogosActivity extends AppCompatActivity {
 
 
-    BancoDadosFruta bancoDadosFruta = null;
+    BancoDadosJogo bancoDadosJogo = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_frutas);
+        setContentView(R.layout.activity_cadastro_jogos);
 
-        bancoDadosFruta = new BancoDadosFruta(this);
+        bancoDadosJogo = new BancoDadosJogo(this);
     }
 
     @Override
@@ -61,8 +61,8 @@ public class CadastroFrutasActivity extends AppCompatActivity {
     }
 
     public void salvar(View view) {
-        EditText nome = findViewById(R.id.editTextTextNomeFruta);
-        EditText preco = findViewById(R.id.editTextTextPrecoFruta);
+        EditText nome = findViewById(R.id.editTextTextNomeJogo);
+        EditText preco = findViewById(R.id.editTextTextPrecoJogo);
 
         if(nome.getText().toString().equals("")){
             Toast.makeText(this,"ERROR, Nome está vazio",Toast.LENGTH_LONG).show();
@@ -86,18 +86,17 @@ public class CadastroFrutasActivity extends AppCompatActivity {
             return;
         }
 
-        Fruta fruta = new Fruta();
-        fruta.setNome(nome.getText().toString());
+        Jogo jogo = new Jogo();
+        jogo.setNome(nome.getText().toString());
         Float precoFloat = Float.parseFloat(preco.getText().toString());
-        fruta.setPreco(precoFloat);
+        jogo.setPreco(precoFloat);
 
-        //listaFruta.add(fruta);
-        bancoDadosFruta.salvarFruta2(fruta);
+        bancoDadosJogo.salvarJogo(jogo);
 
         Bundle bundle = new Bundle();
-        bundle.putSerializable("lista", (Serializable) bancoDadosFruta.buscaTodasFrutas());
+        bundle.putSerializable("lista", (Serializable) bancoDadosJogo.buscaTodosJogos());
 
-        Intent intent= new Intent(this,ListagemFrutasActivity.class);
+        Intent intent= new Intent(this, ListagemJogosActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
 

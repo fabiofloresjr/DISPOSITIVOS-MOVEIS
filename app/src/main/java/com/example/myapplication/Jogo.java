@@ -2,7 +2,7 @@ package com.example.myapplication;
 
 import java.io.Serializable;
 
-public class Fruta implements Serializable {
+public class Jogo implements Serializable {
 
     private String nome;
     private Float preco;
