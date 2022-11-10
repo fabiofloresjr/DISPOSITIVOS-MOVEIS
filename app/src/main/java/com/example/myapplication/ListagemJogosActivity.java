@@ -45,7 +45,7 @@ public class ListagemJogosActivity extends AppCompatActivity {
     }
     public void abreTelaDelete(View view) {
 
-        Intent intent = new Intent(this, activity_delete_jogo.class);
+        Intent intent = new Intent(this, DeleteJogoActivity.class);
         startActivity(intent);
     }
     public void abreTelaCadastro(View view){

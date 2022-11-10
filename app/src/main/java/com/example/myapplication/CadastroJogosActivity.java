@@ -102,5 +102,13 @@ public class CadastroJogosActivity extends AppCompatActivity {
 
 
     }
+    public void abreTelaLista(View view) {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("lista", (Serializable) bancoDadosJogo.buscaTodosJogos());
+
+        Intent intent= new Intent(this, ListagemJogosActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
 
 }

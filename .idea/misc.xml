@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/fatec.senai/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_cadastro_frutas.xml" value="0.25769927536231885" />
+        <entry key="..\:/Users/fatec.senai/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_cadastro_jogos.xml" value="0.1641337386018237" />
         <entry key="..\:/Users/fatec.senai/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_delete_fruta.xml" value="0.25" />
         <entry key="..\:/Users/fatec.senai/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_listagem_fruta_list_view.xml" value="0.16875" />
         <entry key="..\:/Users/fatec.senai/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_listagem_frutas.xml" value="0.25769927536231885" />
+        <entry key="..\:/Users/fatec.senai/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_listagem_jogos.xml" value="0.1641337386018237" />
         <entry key="..\:/Users/fatec.senai/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_update_fruta.xml" value="0.25769927536231885" />
         <entry key="..\:/Users/fatec.senai/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/item_fruta.xml" value="0.25769927536231885" />
       </map>

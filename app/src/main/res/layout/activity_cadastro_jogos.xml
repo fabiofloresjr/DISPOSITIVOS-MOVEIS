@@ -46,5 +46,12 @@
             android:onClick="salvar"
             android:text="Salvar" />
 
+        <Button
+            android:id="@+id/buttonSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:onClick="abreTelaLista"
+            android:text="Ver a lista" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

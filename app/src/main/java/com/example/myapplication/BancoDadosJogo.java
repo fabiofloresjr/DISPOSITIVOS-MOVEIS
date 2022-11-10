@@ -43,9 +43,7 @@ public class BancoDadosJogo extends SQLiteOpenHelper {
         Log.i("jogo","Executado onUpgrade");
     }
 
-    // salvar por modo tradicional
     public void salvarJogo(Jogo jogo){
-         // insert into jogo values (null,'maca',5 );
         String sql = "insert into jogo values (null,'" +
                 jogo.getNome()+ "', " + jogo.getPreco() + " )";
         Log.i("jogo","SQL salvarJogo: " + sql);
@@ -79,17 +77,6 @@ public class BancoDadosJogo extends SQLiteOpenHelper {
         String sql = "update jogo set preco = '" + novoPreco + "' where nome == '" + nome + "'" ;
         Log.i("jogo","SQL updatePrecoJogo: " + sql);
         getWritableDatabase().execSQL(sql);
-    }
-    public void updateJogo(Integer id, Float novoPreco, String nome){
-        StringBuilder sql = new StringBuilder();
-        sql.append("update jogo set ");
-        if(novoPreco != null && nome != null){
-            sql.append(" preco = ").append(novoPreco).append(",");
-            sql.append(" nome = ").append(nome);
-        }
-        sql.append(" where id = ").append(id);
-        Log.i("jogo","SQL updateJogo: " + sql.toString());
-        getWritableDatabase().execSQL(sql.toString());
     }
 
 }

@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 import java.io.Serializable;
 
-public class activity_delete_jogo extends AppCompatActivity {
+public class DeleteJogoActivity extends AppCompatActivity {
 
     BancoDadosJogo bancoDadosJogo = null;
     @Override
